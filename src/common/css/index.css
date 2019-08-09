@@ -1,0 +1,37 @@
+html {
+	/*设计图 750px
+		把设计图分成7.5等份 每一份是100px
+		把100px 作为一个换算单位
+		设计图上的真实物理像素是376px 写css大小是3.76rem
+
+		100% 设备宽
+		50% 设备宽度的1/2
+		100vw
+		50vw
+
+		100vw
+		    屏幕的大小也要分省7.5等份  
+		    每一份 = 100vw / 7.5 = 13.3333vw
+	*/
+	font-size: 13.333vw;
+	-webkit-font-smoothing:antialiased; /*chrome、safari 抗锯齿*/
+	-webkit-text-size-adjust:100%;
+	text-size-adjust:none;
+	color: #333;
+	user-select: none;
+
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+img {
+	vertical-align: top;
+}
+li {
+	list-style: none;
+}
