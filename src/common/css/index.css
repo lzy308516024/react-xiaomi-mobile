@@ -35,3 +35,6 @@ img {
 li {
 	list-style: none;
 }
+.active {
+	color: #ff6700 !important;
+}

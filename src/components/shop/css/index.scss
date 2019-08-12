@@ -1,0 +1,47 @@
+.shop {
+	height:4.12rem;
+	.shopdetatils {
+		width:100%;
+		
+		img {
+			width:100%;
+			height:100%;
+		}
+	}
+	.overview-goods-name {
+		padding: .32rem .32rem 0;
+		background: #fff;
+    	text-align: left;
+		font-size: .5rem;
+    	margin-bottom:.1rem;
+    	
+	}
+	.section-detail {
+		padding: 0 .32rem;
+		.overview-goods-brief {
+			font-size:0.14rem;
+			line-height: 1.5em;
+		    word-break: break-all;
+		    color: rgba(0,0,0,.54)
+		}
+	}
+	.goods-price {
+		display:flex;
+		flex-direction:row;
+		.price{
+		    color: #ff6700;
+   			font-size: .48rem;
+		}
+		.origin-price {
+			margin-left: .26rem;
+		    color: rgba(0,0,0,.54);
+		    font-size: .24rem;
+		    height:.3rem;
+		    display:flex;
+		    margin-top:.2rem;
+		    align-content:flex-end;
+		    text-decoration: line-through;
+
+		}
+	}
+}
