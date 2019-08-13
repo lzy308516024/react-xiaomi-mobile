@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import { NavLink } from 'react-router-dom'
 import './css/index.scss'
 
 
@@ -9,10 +10,10 @@ class Tabbar extends Component {
 			<div className = {'tabbar'}>
 				<ul>
 					<li>
-						<a href="/" className = {'active'}>
+						<NavLink to="/" className = {'active'}>
 							<i className = {'iconfont icon-home1'}></i>
 							<span>首页</span>
-						</a>
+						</NavLink>
 					</li>
 					<li>
 						<a href="/">
@@ -21,10 +22,10 @@ class Tabbar extends Component {
 						</a>
 					</li>
 					<li>
-						<a href="/">
+						<NavLink to="/shopcart">
 							<i className = {'iconfont icon-gouwuche1'}></i>
 							<span>购物车</span>
-						</a>
+						</NavLink>
 					</li>
 					<li>
 						<a href="/">

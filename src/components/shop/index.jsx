@@ -28,6 +28,70 @@ class Shop extends Component {
 						2999
 					</div>
 				</div>
+				<div className="section-detail">
+					<div className="ul-box">
+						<ul>
+							<li>
+								<div className = {'img-box'}>
+									<img src={require('./img/ia_10003.png')} alt=""/>
+								</div>
+								<p>CPU</p>
+								<p>骁龙845八核</p>
+							</li>
+							<li>
+								<div className = {'img-box'}>
+									<img src={require('./img/ia_10003.png')} alt=""/>
+								</div>
+								<p>CPU</p>
+								<p>骁龙845八核</p>
+							</li>
+							<li>
+								<div className = {'img-box'}>
+									<img src={require('./img/ia_10003.png')} alt=""/>
+								</div>
+								<p>CPU</p>
+								<p>骁龙845八核</p>
+							</li>
+							<li>
+								<div className = {'img-box'}>
+									<img src={require('./img/ia_10003.png')} alt=""/>
+								</div>
+								<p>CPU</p>
+								<p>骁龙845八核</p>
+							</li>
+							<li>
+								<div className = {'img-box'}>
+									<img src={require('./img/ia_10003.png')} alt=""/>
+								</div>
+								<p>CPU</p>
+								<p>骁龙845八核</p>
+							</li>
+							<li>
+								<div className = {'img-box'}>
+									<img src={require('./img/ia_10003.png')} alt=""/>
+								</div>
+								<p>CPU</p>
+								<p>骁龙845八核</p>
+							</li>	
+						</ul>
+					</div>
+					
+				</div>
+				<div className="section-detail detail">
+				</div>
+				<div className="footbar">
+					<div className="footer">
+						<a href="/" >
+							<i className = {'iconfont icon-home1'}></i>
+							<span>首页</span>
+						</a>
+						<a href="/">
+							<i className = {'iconfont icon-gouwuche1'}></i>
+							<span>购物车</span>
+						</a>
+						<input className = 'buybtn' type="button" defaultValue = {'立即购买'}/>
+					</div>
+				</div>
 				
 			</div>
 		)

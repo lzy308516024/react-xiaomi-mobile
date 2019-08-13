@@ -24,6 +24,43 @@
 		    word-break: break-all;
 		    color: rgba(0,0,0,.54)
 		}
+		.ul-box {
+			width:100%;
+			overflow:auto;
+			ul {
+				width:300%;
+				display:flex;
+				flex-wrap:nowrap;
+				overflow:scroll;
+				li {
+					width:23%;
+					text-align:center;
+					display:flex;
+					justify-content:center;
+					flex-direction:column;
+					margin-right:.3rem;
+					.img-box {
+						width:.4rem;
+						height:.4rem;
+						margin:0 auto;
+						img {
+							width:100%;
+						}
+					}
+					p {
+						font-size:.24rem;
+						text-align:center;
+					}
+				}
+			}
+			
+		}
+		
+	}
+	.detail {
+		width:100%;
+		height:1.3rem;
+		background:#fff;
 	}
 	.goods-price {
 		display:flex;
@@ -43,5 +80,55 @@
 		    text-decoration: line-through;
 
 		}
+	}
+	.footbar {
+		padding: 0 .16rem .16rem;
+	    background: transparent;
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 100;
+	    .footer {
+	    	background-color: hsla(0,0%,100%,.96)!important;
+		    width: 100%;
+		    height: 1.04rem;
+		    border: 1px solid #e5e5e5;
+		    border-radius: .16rem;
+		    overflow: hidden;
+		    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12);
+		    display:flex;
+		    align-items:center;
+		    a {
+		    	font-size:.22rem;
+		    	text-align:center;
+		    	display:flex;
+		    	justify-content:center;
+		    	flex-direction:column;
+		    	margin-left:.5rem;
+		    	span {
+		    		font-size:.22rem;
+		    	}
+		    }
+		    .buybtn {
+		    	margin-left:2rem;
+	    	    width: auto;
+			    max-width: 4rem;
+			    overflow: hidden;
+			    padding: 0 .48rem;
+			    height: .64rem;
+			    line-height: .64rem;
+			    border-radius: .32rem;
+			    outline: 0;
+			    background: #ff6700;
+			    color: #fff;
+			    text-align: center;
+			    
+			    height: .8rem;
+			    line-height: .8rem;
+			    font-size: .28rem;
+			    border:none;
+		    }
+	    } 
 	}
 }
