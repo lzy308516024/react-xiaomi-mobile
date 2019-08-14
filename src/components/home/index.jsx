@@ -14,7 +14,7 @@ import  Tabbar from '../tabbar'
 class Home extends Component {
   render(){
     return (
-      <Router>
+      
             <div className = "app"> 
               <Header></Header>
               <Banner></Banner>
@@ -24,7 +24,7 @@ class Home extends Component {
               <Goods></Goods>
               <Tabbar></Tabbar>
             </div>
-      </Router>
+      
      
     )
   }

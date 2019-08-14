@@ -1,0 +1,159 @@
+.cart {
+	
+	.cart-box {
+		padding: .24rem 0;
+		display:flex;
+		flex-direaction:row;
+		.chk {
+			width: .6rem;
+	    	padding: 0 .2rem;
+	    	height: 1.8rem;
+		}
+		.goodsImg {
+			display: block;
+		    position: relative;
+		    width: 1.8rem;
+		    height: 1.8rem;
+		    margin-right: .2rem;
+		    border: 1px solid #eee;
+		    border-radius: 2px;
+		    img {
+		    	width:100%;
+		    }
+		}
+		.goodsInfo {
+			width: 4.6rem;
+    		text-align: left;
+    		.name {
+    			width: 3.6rem;
+    			font-size: .28rem;
+	    		line-height: .32rem;
+	    		color: #666;
+    		}
+    		.price-without {
+    			padding: .12rem 0;
+				font-size: .24rem;
+				color: #999;
+				margin-bottom: .12rem;
+				span {
+					margin-right: .1rem
+				}
+    		}
+    		.num {
+    			display:flex;
+    			.input-number {
+    				border: 1px solid #eee;
+    				display:flex;
+    				font-size: .32rem;
+    				.input-sub {
+    					display: inline-block;
+    					width: .6rem;
+    					height: .6rem;
+    					position: relative;
+         				vertical-align: middle;
+    					background-color: #fafafa;
+    					text-align: center;
+    					width: .6rem;
+    					height: .6rem;
+    					background-size: .3rem .3rem;
+    					i {
+    						font-size:0.52rem;
+    						display:block;
+    					}
+    				}
+    				.input-add {
+    					display: inline-block;
+    					width: .6rem;
+    					height: .6rem;
+    					position: relative;
+         				vertical-align: middle;
+    					background-color: #fafafa;
+    					text-align: center;
+    					width: .6rem;
+    					height: .6rem;
+    					background-size: .3rem .3rem;
+    					i {
+    						font-size:0.52rem;
+    						display:block;
+    					}
+    				}
+    				.input-num {
+    					display: inline-block;
+    					width: .6rem;
+    					height: .6rem;
+
+    					position: relative;
+         				vertical-align: middle;
+    					
+    					text-align: center;
+    					width: .6rem;
+    					height: .6rem;
+    					background-size: .3rem .3rem;
+    					span {
+    						font-size:0.32rem;
+    						display:block;
+    						line-height:.6rem;
+    					}
+    				}
+    			}
+    			.delete{
+
+    			}
+    		}
+		}		
+	}
+	.bottom-submit {
+		position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    background: #fff;
+	    z-index: 99;
+	    box-shadow: 0 3px 14px 2px rgba(0,0,0,.12);
+	    .box-flex {
+	    	display:flex;
+	    	.price-box{
+	    		font-size: .26rem;
+			    color: #999;
+			    width: 100%;
+			    text-align: center;
+			    padding-top: .15rem;
+			    .title {
+			    	font-size: .26rem;
+	    			color: #999;
+	    			width: 100%;
+	    			text-align: center;	
+			    }
+			    .last_price {
+			    	font-size: .4rem;
+    				color: #ff5722;
+    				margin-right: .2em;
+			    }
+	    	}
+	    	.buymore {
+	    		    background: #f4f4f4;
+    				border: 1px solid #f4f4f4;
+    				display: block;
+	    			outline: 0;
+	    			
+		    		color:#333;
+		    		text-align: center;
+		    		width: 100%;
+		    		height: 1rem;
+		    		line-height: 1rem;
+		    		font-size: .28rem;
+	    	}
+	    	.buy {
+	    		    display: block;
+    				outline: 0;
+    				background: #ff6700;
+    				color: #fff;
+    				text-align: center;
+    				width: 100%;
+    				height: 1rem;
+    				line-height: 1rem;
+    				font-size: .28rem;
+	    	}
+	    }
+	}
+}

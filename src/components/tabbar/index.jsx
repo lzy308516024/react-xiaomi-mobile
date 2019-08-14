@@ -16,22 +16,22 @@ class Tabbar extends Component {
 						</NavLink>
 					</li>
 					<li>
-						<a href="/">
+						<NavLink to="/fenlei">
 							<i className = {'iconfont icon-fenlei1'}></i>
 							<span>分类</span>
-						</a>
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/shopcart">
+						<NavLink to="/cart">
 							<i className = {'iconfont icon-gouwuche1'}></i>
 							<span>购物车</span>
 						</NavLink>
 					</li>
 					<li>
-						<a href="/">
+						<NavLink to="/my">
 							<i className = {'iconfont icon-wode2'}></i>
 							<span>我的</span>
-						</a>
+						</NavLink>
 					</li>
 				</ul>
 			</div>
