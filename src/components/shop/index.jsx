@@ -1,10 +1,31 @@
 import React,{Component} from 'react';
+import {connect} from 'react-redux'
+import {addCart} from '../../actions/cart'
+import {Link} from 'react-router-dom'
 import './css/index.scss'
 
+@connect(
+	state => ({shop:state}),
+	{addCart}
+)
 
 class Shop extends Component {
-	
+	state = {
+		data:{},
+		num:1
+	}
+	addToCart = () => {
+		let {num} = this.state
+		num && (
+			addCart({
+				id:19,
+				num
+			})
+		)
+		console.log('提交到购物车')
+	}
 	render(){
+
 		return (
 			<div className = {'shop'}>
 				<div className="shopdetatils">
@@ -85,11 +106,11 @@ class Shop extends Component {
 							<i className = {'iconfont icon-home1'}></i>
 							<span>首页</span>
 						</a>
-						<a href="/">
+						<a href="javascript:void(0)" onClick = {this.addToCart}>
 							<i className = {'iconfont icon-gouwuche1'}></i>
-							<span>购物车</span>
+							<span>加入购物车</span>
 						</a>
-						<input className = 'buybtn' type="button" defaultValue = {'立即购买'}/>
+						<Link to ='cart' className = 'buybtn'>立即购买</Link>
 					</div>
 				</div>
 				

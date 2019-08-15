@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import Swiper from 'swiper'
+import {NavLink} from 'react-router-dom'
 
 import './index.scss'
 
@@ -17,14 +18,14 @@ class Banner extends Component {
 			<div className = {'banner swiper-container'}>
 				<ul className = {'swiper-wrapper'}>
 					<li className = {'swiper-slide'}>
-						<a href="/">
+						<NavLink to="/fenlei">
 							<img src={require('./img/1.jpg')} alt=""/>
-						</a>
+						</NavLink>
 					</li>
 					<li className = {'swiper-slide'}>
-						<a href="/">
+						<NavLink to="/fenlei">
 							<img src={require('./img/2.jpg')} alt=""/>
-						</a>
+						</NavLink>
 					</li>
 					
 				</ul>

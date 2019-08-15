@@ -1,6 +1,14 @@
 import React,{Component} from 'react';
 import './css/index.scss'
 import Header from '../header'
+import {connect} from 'react-redux'
+import {addCart} from '../../actions/cart'
+
+@connect(
+	state => ({shop:state}),
+	{addCart}
+)
+
 
 
 class Cart extends Component {
@@ -16,24 +24,31 @@ class Cart extends Component {
 		this.handleadd = this.handleadd.bind(this);
 	}
 	handlesub(){
-		console.log(this.state)
-		this.state.number && this.setState({
-				number:this.state.number-1,
-				sum:this.state.number*this.state.price
-			})
-	}
-	handleadd(){
 		
-		this.setState({
-			number: this.state.number + 1,
-			sum:this.state.number*this.state.price
+		let number  = this.state.number
+			number--
+		let sum = number*this.state.price
+		this.state.number && this.setState({
+				number:number,
+				sum:sum
 		})
-		console.log(this.state)
+	}
+
+	handleadd(){
+		let number  = this.state.number
+			number = number+1
+		let sum = number*this.state.price
+		this.setState({
+			number: number,
+			sum:sum
+		})
+		
 	
 	}
 
 
 	render(){
+
 		return (
 			<div className = {'cart'}>
 				<Header></Header>
